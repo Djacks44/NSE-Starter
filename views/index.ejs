@@ -2,17 +2,23 @@
 <html>
 <% include ./partials/head %>
 
-<body>
+<body class="Site">
 <% include ./partials/nav %>
-<% for (var i = 0; i < this.title.length; i++) { %>
-	<p class="nomp">James Fucking Bondo <%= title[i] %></p>
+
+
+<div class="Site-content">
+<h1 class="sass-example one">Who played James Bond</h1>
+
+<img class="one" src="https://lh4.googleusercontent.com/-QghOeQpiavs/AAAAAAAAAAI/AAAAAAAAWgA/HAr-ajwhHSs/s0-c-k-no-ns/photo.jpg">
+<% for (var i = 0; i < this.name.length; i++) { %>
+	<div class="two"><h2 class="sass-example"><%= i +1 %>. <%= name[i] %></h2></div>
 <% } %>
+</div>
 
 
-<script src="//localhost:35729/livereload.js"></script>
+
 <% include ./partials/footer %>
 </body>
 <!-- jQuery library -->
 
 </html>
-
